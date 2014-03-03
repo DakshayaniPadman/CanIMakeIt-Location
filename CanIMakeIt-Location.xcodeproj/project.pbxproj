@@ -14,13 +14,14 @@
 		FB14103C18C3F6960061E362 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB14103B18C3F6960061E362 /* main.m */; };
 		FB14104018C3F6960061E362 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB14103F18C3F6960061E362 /* AppDelegate.m */; };
 		FB14104318C3F6960061E362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB14104118C3F6960061E362 /* Main.storyboard */; };
-		FB14104618C3F6960061E362 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB14104518C3F6960061E362 /* ViewController.m */; };
+		FB14104618C3F6960061E362 /* GetLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB14104518C3F6960061E362 /* GetLocationViewController.m */; };
 		FB14104818C3F6960061E362 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB14104718C3F6960061E362 /* Images.xcassets */; };
 		FB14104F18C3F6970061E362 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB14104E18C3F6970061E362 /* XCTest.framework */; };
 		FB14105018C3F6970061E362 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB14102F18C3F6960061E362 /* Foundation.framework */; };
 		FB14105118C3F6970061E362 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB14103318C3F6960061E362 /* UIKit.framework */; };
 		FB14105918C3F6970061E362 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB14105718C3F6970061E362 /* InfoPlist.strings */; };
 		FB14105B18C3F6970061E362 /* CanIMakeIt_LocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB14105A18C3F6970061E362 /* CanIMakeIt_LocationTests.m */; };
+		FB14106518C3F6A80061E362 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB14106418C3F6A80061E362 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,15 @@
 		FB14103E18C3F6960061E362 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB14103F18C3F6960061E362 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FB14104218C3F6960061E362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB14104418C3F6960061E362 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FB14104518C3F6960061E362 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB14104418C3F6960061E362 /* GetLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetLocationViewController.h; sourceTree = "<group>"; };
+		FB14104518C3F6960061E362 /* GetLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetLocationViewController.m; sourceTree = "<group>"; };
 		FB14104718C3F6960061E362 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB14104D18C3F6970061E362 /* CanIMakeIt-LocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CanIMakeIt-LocationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB14104E18C3F6970061E362 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FB14105618C3F6970061E362 /* CanIMakeIt-LocationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CanIMakeIt-LocationTests-Info.plist"; sourceTree = "<group>"; };
 		FB14105818C3F6970061E362 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB14105A18C3F6970061E362 /* CanIMakeIt_LocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanIMakeIt_LocationTests.m; sourceTree = "<group>"; };
+		FB14106418C3F6A80061E362 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB14106518C3F6A80061E362 /* CoreLocation.framework in Frameworks */,
 				FB14103218C3F6960061E362 /* CoreGraphics.framework in Frameworks */,
 				FB14103418C3F6960061E362 /* UIKit.framework in Frameworks */,
 				FB14103018C3F6960061E362 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		FB14102E18C3F6960061E362 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB14106418C3F6A80061E362 /* CoreLocation.framework */,
 				FB14102F18C3F6960061E362 /* Foundation.framework */,
 				FB14103118C3F6960061E362 /* CoreGraphics.framework */,
 				FB14103318C3F6960061E362 /* UIKit.framework */,
@@ -115,8 +119,8 @@
 				FB14103E18C3F6960061E362 /* AppDelegate.h */,
 				FB14103F18C3F6960061E362 /* AppDelegate.m */,
 				FB14104118C3F6960061E362 /* Main.storyboard */,
-				FB14104418C3F6960061E362 /* ViewController.h */,
-				FB14104518C3F6960061E362 /* ViewController.m */,
+				FB14104418C3F6960061E362 /* GetLocationViewController.h */,
+				FB14104518C3F6960061E362 /* GetLocationViewController.m */,
 				FB14104718C3F6960061E362 /* Images.xcassets */,
 				FB14103618C3F6960061E362 /* Supporting Files */,
 			);
@@ -249,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB14104618C3F6960061E362 /* ViewController.m in Sources */,
+				FB14104618C3F6960061E362 /* GetLocationViewController.m in Sources */,
 				FB14104018C3F6960061E362 /* AppDelegate.m in Sources */,
 				FB14103C18C3F6960061E362 /* main.m in Sources */,
 			);
